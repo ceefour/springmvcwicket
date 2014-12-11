@@ -38,9 +38,14 @@ sourceSets {
     }
 }
 
+configurations {
+    compile.exclude module: 'spring-boot-starter-tomcat'
+}
+
 dependencies {
     compile('org.apache.wicket:wicket-spring:6.18.0')
-    compile("org.springframework.boot:spring-boot-starter-web")
+    compile('org.springframework.boot:spring-boot-starter-web')
+    compile('org.springframework.boot:spring-boot-starter-undertow')
     compile("org.codehaus.groovy:groovy")
     testCompile("org.springframework.boot:spring-boot-starter-test")
 }
