@@ -1,0 +1,21 @@
+target
+build
+.gradle
+.directory
+.factorypath
+.classpath
+.settings
+.project
+
+# Intellij
+.idea/copyright
+.idea/libraries
+.idea/scopes
+.idea/.name
+.idea/*.xml
+*.iml
+*.ipr
+*.iws
+out/
+.idea_modules/
+atlassian-ide-plugin.xml
